@@ -9,8 +9,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0">
-      <div className="container mx-auto p-0 md:p-3 md:flex">
+    <nav className="sticky top-0 z-50">
+      <div className="container mx-auto p-0 md:p-3 md:flex bg-white">
         <div className="flex">
           <Image
             src={Logo}
@@ -25,7 +25,7 @@ export default function Navbar() {
           </button>
         </div>
         <div
-          className={`ms-auto my-8 md:space-x-10 md:flex ${
+          className={`ms-auto my-8 md:space-x-10 md:flex bg-white ${
             open ? "space-x-0" : "hidden"
           }`}
         >
