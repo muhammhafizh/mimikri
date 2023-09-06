@@ -9,7 +9,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 bg-white z-50">
+    <nav className="sticky top-0">
       <div className="container mx-auto p-0 md:p-3 md:flex">
         <div className="flex">
           <Image

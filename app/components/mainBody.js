@@ -21,7 +21,7 @@ export default function CatalogueSection() {
   ];
 
   return (
-    <main className="container mx-auto p-0 md:p-3 md:flex my-20 bg-white" id="catalogue">
+    <main className="container mx-auto p-0 md:p-3 md:flex my-20" id="catalogue">
       <h1 className="font-bold text-center md:ms-20">CATALOGUE</h1>
       <div className="my-8 md:mt-28 md:-ms-24 md:flex">
         {dataCatalogue?.map((data) => {
