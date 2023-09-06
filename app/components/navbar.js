@@ -30,22 +30,22 @@ export default function Navbar() {
           }`}
         >
           <a href="#catalogue">
-            <button className="font-medium block ps-9 md:ps-0">
+            <button className="font-medium block ps-9 md:ps-0 text-black">
               CATALOGUE
             </button>
           </a>
           <a href="#fashion">
-            <button className="font-medium block ps-9 md:ps-0 my-1 md:my-0">
+            <button className="font-medium block ps-9 md:ps-0 my-1 text-black md:my-0">
               FASHION
             </button>
           </a>
           <a href="#favourite">
-            <button className="font-medium block ps-9 md:ps-0 mb-2 md:mb-0">
+            <button className="font-medium block ps-9 md:ps-0 mb-2 text-black md:mb-0">
               FAVOURITE
             </button>
           </a>
           <a href="#lifestyle">
-            <button className="font-medium block ps-9 md:ps-0 mb-2 md:mb-0">
+            <button className="font-medium block ps-9 md:ps-0 mb-2 text-black md:mb-0">
               LIFESTYLE
             </button>
           </a>

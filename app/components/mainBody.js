@@ -33,8 +33,8 @@ export default function CatalogueSection() {
               <Image src={data.image} width="auto" height="auto" />
               <div className="flex">
                 <div className="mt-3 me-auto">
-                  <h1 className="font-bold">{data.subtitle}</h1>
-                  <p className="font-light">explore now</p>
+                  <h1 className="font-bold text-black">{data.subtitle}</h1>
+                  <p className="font-light text-gray-400">explore now</p>
                 </div>
                 <button>
                   <Image src={Arrow} width={20} height={20} />
