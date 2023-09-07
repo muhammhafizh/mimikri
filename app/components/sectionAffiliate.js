@@ -12,7 +12,7 @@ export default function EmailSection() {
           action="mailto:mimikri.indonesia19@gmail.com"
           method="post"
           encType="text/plain"
-          className="flex bg-white w-72 h-14 mx-auto rounded-lg py-1 ps-3 pe-1"
+          className="flex bg-white w-80 h-14 mx-auto rounded-lg py-1 ps-3 pe-1"
         >
           <input
             type="email"
