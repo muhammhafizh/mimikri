@@ -1,6 +1,7 @@
 import CatalogueSection from "./components/mainBody";
 import HeaderSection from "./components/mainHeader";
 import Navbar from "./components/navbar";
+import EmailSection from "./components/sectionAffiliate";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <HeaderSection />
       <CatalogueSection />
+      <EmailSection />
     </div>
   );
 }
