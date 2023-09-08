@@ -1,3 +1,4 @@
+import FooterSection from "./components/footerSection";
 import CatalogueSection from "./components/mainBody";
 import HeaderSection from "./components/mainHeader";
 import Navbar from "./components/navbar";
@@ -10,6 +11,7 @@ export default function Home() {
       <HeaderSection />
       <CatalogueSection />
       <EmailSection />
+      <FooterSection />
     </div>
   );
 }
