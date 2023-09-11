@@ -6,15 +6,15 @@ export default function HeaderSection() {
     <main className="container mx-auto p-0 md:p-3">
       <div className="mt-10 md:mt-0 flex flex-col-reverse md:flex-row">
         <section className="md:ps-28 md:pt-14 space-y-10 md:space-y-5">
-          <h1 className="text-black font-medium text-2xl md:text-5xl mb-10 text-center md:text-left">
+          <h1 className="text-black font-medium text-2xl md:text-4xl mb-10 text-center md:text-left">
             <span className="text-yellow-400 font-bold">Hello</span>, We Are{" "}
             <span className="text-black font-black">Mimikri Supply</span>
           </h1>
-          <p className="text-gray-400 md:pe-60 text-center md:text-left">
+          <p className="text-gray-400 text-center md:text-left">
             A Creative Clothes Manufacturing that has been help organization or
             company since 2020, Based in Tangerang Selatan.
           </p>
-          <p className="text-gray-400 md:pe-60 text-center md:text-left">
+          <p className="text-gray-400 text-center md:text-left">
             We believe <span className="text-gray-500 font-bold">Identity</span>{" "}
             is a must towards building a great company and organization with
             creating <span className="text-gray-500 font-bold">Identity</span>{" "}
@@ -31,7 +31,7 @@ export default function HeaderSection() {
           </div>
         </section>
         <div className="ms-auto">
-          <Image src={HeroSection} width={1000} />
+          <Image src={HeroSection} width={2000} />
         </div>
       </div>
     </main>
