@@ -21,14 +21,16 @@ export default function CatalogueSection() {
   ];
 
   return (
-    <main className="container mx-auto p-0 md:p-3 md:flex my-20" id="catalogue">
-      <h1 className="font-bold text-center md:ms-20 text-black">CATALOGUE</h1>
-      <div className="my-8 md:mt-28 md:-ms-24 md:flex">
+    <main className="container mx-auto p-0 md:p-3 my-20" id="catalogue">
+      <h1 className="font-bold text-center text-2xl md:ms-20 text-black">
+        Our Product
+      </h1>
+      <div className="my-8 md:mt-28 md:ms-24 md:flex">
         {dataCatalogue?.map((data) => {
           return (
             <div
               key={data.index}
-              className="w-60 h-80 md:h-96 mx-auto mb-36 md:mb-0 md:me-20 rounded-md"
+              className="w-60 h-80 md:h-96 mx-auto md:mx-0 mb-36 md:mb-0 md:me-20 rounded-md"
             >
               <Image src={data.image} width="auto" height="auto" />
               <div className="flex">
