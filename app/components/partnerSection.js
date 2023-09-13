@@ -14,6 +14,12 @@ export default function PartnerSection() {
     Partner4,
     Partner5,
     Partner6,
+    Partner1,
+    Partner2,
+    Partner3,
+    Partner4,
+    Partner5,
+    Partner6,
   ];
 
   return (

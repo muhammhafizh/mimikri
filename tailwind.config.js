@@ -13,7 +13,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        scroll: "scroll 20s linear infinite",
+        scroll: "scroll 40s linear infinite",
       },
       keyframes: {
         scroll: {
