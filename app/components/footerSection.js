@@ -56,7 +56,7 @@ export default function FooterSection() {
         <section className="w-60">
           <h1 className="text-white font-bold">MIMIKRI SUPPLY</h1>
           <p className="text-gray-400 font-light my-3">
-            Complete your style with awesome clothes from us.
+            Strengthen your IDENTITY with us.
           </p>
           <div className="flex">
             {imageData?.map((img) => {
