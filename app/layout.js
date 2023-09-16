@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Favicon from "/public/logo.svg";
+import Favicon from "/public/MIMIKRI-BLACK-LOGO.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
