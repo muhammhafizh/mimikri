@@ -22,10 +22,8 @@ export default function CatalogueSection() {
 
   return (
     <main className="container mx-auto p-0 md:p-3 my-20" id="catalogue">
-      <h1 className="font-bold text-center text-2xl md:ms-20 text-black">
-        Our Product
-      </h1>
-      <div className="my-8 md:mt-28 md:ms-24 md:flex">
+      <h1 className="font-bold text-center text-3xl text-black">Our Product</h1>
+      <div className="my-8 md:mt-28 md:ms-24 md:flex md:justify-between">
         {dataCatalogue?.map((data) => {
           return (
             <div

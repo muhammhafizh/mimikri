@@ -31,22 +31,27 @@ export default function Navbar() {
         >
           <a href="#catalogue">
             <button className="font-medium block ps-9 md:ps-0 text-black">
-              CATALOGUE
+              ABOUT US
             </button>
           </a>
           <a href="#fashion">
             <button className="font-medium block ps-9 md:ps-0 my-1 text-black md:my-0">
-              FASHION
+              OUR PRODUCT
             </button>
           </a>
           <a href="#favourite">
             <button className="font-medium block ps-9 md:ps-0 mb-2 text-black md:mb-0">
-              FAVOURITE
+              SERVICES
             </button>
           </a>
           <a href="#lifestyle">
             <button className="font-medium block ps-9 md:ps-0 mb-2 text-black md:mb-0">
-              LIFESTYLE
+              RECENT PROJECT
+            </button>
+          </a>
+          <a href="#lifestyle">
+            <button className="font-medium block ps-9 md:ps-0 mb-2 text-black md:mb-0">
+              CONTACT US
             </button>
           </a>
           {/* <a href="/Register">

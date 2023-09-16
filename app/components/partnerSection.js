@@ -2,7 +2,7 @@ import Image from "next/image";
 import Partner1 from "/public/Partner1.svg";
 import Partner2 from "/public/Partner2.svg";
 import Partner3 from "/public/Partner3.svg";
-import Partner4 from "/public/Partner4.svg";
+import Partner4 from "/public/Maybank.svg";
 import Partner5 from "/public/Partner5.svg";
 import Partner6 from "/public/Partner6.svg";
 
@@ -24,9 +24,9 @@ export default function PartnerSection() {
 
   return (
     <div className="w-full container mx-auto">
-      <h1 className="text-center font-bold text-2xl">Our Partner</h1>
-      <div className="h-[150px] m-auto overflow-hidden relative w-auto my-7">
-        <ul className="flex w-[calc(250px*14)] animate-scroll">
+      <h1 className="text-center font-bold text-3xl">Our Partner</h1>
+      <div className="h-[350px] m-auto overflow-hidden relative w-auto my-7">
+        <ul className="flex w-[calc(250px*14)] animate-scroll pt-5">
           {imageData?.map((image, index) => {
             return (
               <li className="w-60" key={index}>
