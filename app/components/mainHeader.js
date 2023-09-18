@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HeroSection from "/public/section.svg";
+import HeroSection from "/public/Header-Rev-1.svg";
 
 export default function HeaderSection() {
   return (

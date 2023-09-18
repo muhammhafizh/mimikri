@@ -1,42 +1,58 @@
+"use client";
+
 import Image from "next/image";
-import Catalogue1 from "/public/Catalogue1.svg";
-import Catalogue2 from "/public/Catalogue2.svg";
-import Catalogue3 from "/public/Catalogue3.svg";
+import Catalogue1 from "/public/4.png";
+import Catalogue2 from "/public/5.png";
+import Catalogue3 from "/public/6.png";
+import Catalogue4 from "/public/7.png";
+import Catalogue5 from "/public/8.png";
+import Catalogue6 from "/public/9.png";
 import Arrow from "/public/Arrow.svg";
 
 export default function CatalogueSection() {
   const dataCatalogue = [
     {
       image: Catalogue1,
-      subtitle: "Hoodies & Sweetshirt",
+      subtitle: "Hoodies",
     },
     {
       image: Catalogue2,
-      subtitle: "Coats & Parkas",
+      subtitle: "T-Shirt",
     },
     {
       image: Catalogue3,
-      subtitle: "Tees & T-Shirt",
+      subtitle: "Jacket",
+    },
+    {
+      image: Catalogue4,
+      subtitle: "Bomber",
+    },
+    {
+      image: Catalogue5,
+      subtitle: "Jersey",
+    },
+    {
+      image: Catalogue6,
+      subtitle: "Hats",
     },
   ];
 
   return (
-    <main className="container mx-auto p-0 md:p-3 my-20" id="catalogue">
-      <h1 className="font-bold text-center text-3xl text-black">Our Product</h1>
-      <div className="my-8 md:mt-28 md:ms-24 md:flex md:justify-between">
+    <main className="mt-16 md:mt-0 container mx-auto m-20" id="catalogue">
+      <h1 className="font-bold text-center text-3xl text-black mb-5">
+        Our Product
+      </h1>
+      <div className="carousel w-screen md:w-auto mx-auto">
         {dataCatalogue?.map((data) => {
           return (
-            <div
-              key={data.index}
-              className="w-60 h-80 md:h-96 mx-auto md:mx-0 mb-36 md:mb-0 md:me-20 rounded-md"
-            >
-              <Image src={data.image} width="auto" height="auto" />
-              <div className="flex">
-                <section className="mt-3 me-auto">
+            <div key={data.index} className="carousel-item flex flex-col">
+              <Image src={data.image} width="auto" height={300} />
+              <div className="flex w-64">
+                <section className="mt-3 ms-7">
                   <h1 className="font-bold text-black">{data.subtitle}</h1>
                   <p className="font-light text-gray-400">explore now</p>
                 </section>
-                <button>
+                <button className="ms-auto">
                   <Image src={Arrow} width={20} height={20} />
                 </button>
               </div>
