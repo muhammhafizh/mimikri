@@ -21,7 +21,7 @@ export default function Navbar() {
             className="md:hidden mt-1 ml-auto"
             onClick={() => setOpen(!open)}
           >
-            <Image src={Hamburger} width={50} height={50} />
+            <Image src={Hamburger} width={50} height={50} alt="Hamburger" />
           </button>
         </div>
         <div
@@ -30,27 +30,42 @@ export default function Navbar() {
           }`}
         >
           <a href="#catalogue">
-            <button className="font-medium block ps-9 md:ps-0 text-black">
+            <button
+              aria-label="AboutUs"
+              className="font-medium block ps-9 md:ps-0 text-black"
+            >
               ABOUT US
             </button>
           </a>
           <a href="#fashion">
-            <button className="font-medium block ps-9 md:ps-0 my-1 text-black md:my-0">
+            <button
+              aria-label="OurProduct"
+              className="font-medium block ps-9 md:ps-0 my-1 text-black md:my-0"
+            >
               OUR PRODUCT
             </button>
           </a>
           <a href="#favourite">
-            <button className="font-medium block ps-9 md:ps-0 mb-2 text-black md:mb-0">
+            <button
+              aria-label="Services"
+              className="font-medium block ps-9 md:ps-0 mb-2 text-black md:mb-0"
+            >
               SERVICES
             </button>
           </a>
           <a href="#lifestyle">
-            <button className="font-medium block ps-9 md:ps-0 mb-2 text-black md:mb-0">
+            <button
+              aria-label="RecentProjects"
+              className="font-medium block ps-9 md:ps-0 mb-2 text-black md:mb-0"
+            >
               RECENT PROJECT
             </button>
           </a>
           <a href="#lifestyle">
-            <button className="font-medium block ps-9 md:ps-0 mb-2 text-black md:mb-0">
+            <button
+              aria-label="ContactUs"
+              className="font-medium block ps-9 md:ps-0 mb-2 text-black md:mb-0"
+            >
               CONTACT US
             </button>
           </a>

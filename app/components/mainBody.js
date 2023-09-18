@@ -52,14 +52,19 @@ export default function CatalogueSection() {
         {dataCatalogue?.map((data) => {
           return (
             <div key={data.id} className="carousel-item flex flex-col">
-              <Image src={data.image} width="auto" height={300} />
+              <Image
+                src={data.image}
+                width="auto"
+                height={300}
+                alt={data.subtitle}
+              />
               <div className="flex w-64 -mt-7">
                 <section className="ms-7">
                   <h1 className="font-bold text-black">{data.subtitle}</h1>
                   <p className="font-light text-gray-400">explore now</p>
                 </section>
                 <button className="ms-auto">
-                  <Image src={Arrow} width={20} height={20} />
+                  <Image src={Arrow} width={20} height={20} alt="explore" />
                 </button>
               </div>
             </div>

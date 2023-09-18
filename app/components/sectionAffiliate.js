@@ -22,6 +22,7 @@ export default function EmailSection() {
           <button
             className="px-7 bg-black hover:bg-stone-800 text-white rounded-lg text-base"
             type="submit"
+            aria-label="Join Affiliate"
           >
             Send
           </button>

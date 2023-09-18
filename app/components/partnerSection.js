@@ -30,7 +30,7 @@ export default function PartnerSection() {
           {imageData?.map((image, index) => {
             return (
               <li className="w-60" key={index}>
-                <Image src={image} width={200} height={200} />
+                <Image src={image} width={200} height={200} alt="Products" />
               </li>
             );
           })}

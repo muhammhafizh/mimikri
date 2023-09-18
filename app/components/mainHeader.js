@@ -25,13 +25,16 @@ export default function HeaderSection() {
             So let's work together to make a bigger impact
           </p>
           <div className="flex justify-center md:justify-normal">
-            <button className="px-3 py-2 border border-black text-black font-medium rounded-md hover:bg-black hover:text-white self-center">
+            <button
+              aria-label="Discover"
+              className="px-3 py-2 border border-black text-black font-medium rounded-md hover:bg-black hover:text-white self-center"
+            >
               Discover now
             </button>
           </div>
         </section>
         <div className="ms-auto">
-          <Image src={HeroSection} width={2000} />
+          <Image src={HeroSection} width={2000} alt="Mimikri-Section" />
         </div>
       </div>
     </main>
