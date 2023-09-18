@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Partner1 from "/public/catalogue jaket dan baju.png";
-import Partner2 from "/public/Partner2.svg";
-import Partner3 from "/public/Partner3.svg";
-import Partner4 from "/public/Maybank.svg";
-import Partner5 from "/public/Partner5.svg";
-import Partner6 from "/public/Partner6.svg";
+import Partner2 from "/public/BTN.png";
+import Partner3 from "/public/Kbri.png";
+import Partner4 from "/public/Maybank.png";
+import Partner5 from "/public/Vooya.png";
+import Partner6 from "/public/Toyota.png";
 
 export default function PartnerSection() {
   const imageData = [
