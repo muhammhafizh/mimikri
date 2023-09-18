@@ -12,26 +12,32 @@ import Arrow from "/public/Arrow.svg";
 export default function CatalogueSection() {
   const dataCatalogue = [
     {
+      id: 0,
       image: Catalogue1,
       subtitle: "Hoodies",
     },
     {
+      id: 1,
       image: Catalogue2,
       subtitle: "T-Shirt",
     },
     {
+      id: 2,
       image: Catalogue3,
       subtitle: "Jacket",
     },
     {
+      id: 3,
       image: Catalogue4,
       subtitle: "Bomber",
     },
     {
+      id: 4,
       image: Catalogue5,
       subtitle: "Jersey",
     },
     {
+      id: 5,
       image: Catalogue6,
       subtitle: "Hats",
     },
@@ -45,10 +51,10 @@ export default function CatalogueSection() {
       <div className="carousel w-screen md:w-auto mx-auto">
         {dataCatalogue?.map((data) => {
           return (
-            <div key={data.index} className="carousel-item flex flex-col">
+            <div key={data.id} className="carousel-item flex flex-col">
               <Image src={data.image} width="auto" height={300} />
-              <div className="flex w-64">
-                <section className="mt-3 ms-7">
+              <div className="flex w-64 -mt-7">
+                <section className="ms-7">
                   <h1 className="font-bold text-black">{data.subtitle}</h1>
                   <p className="font-light text-gray-400">explore now</p>
                 </section>
