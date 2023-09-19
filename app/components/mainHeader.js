@@ -3,7 +3,7 @@ import HeroSection from "/public/Header-Rev-1.svg";
 
 export default function HeaderSection() {
   return (
-    <main className="container mx-auto p-0 md:p-3">
+    <main className="container mx-auto p-0 md:p-3" id="aboutUs">
       <div className="mt-10 md:mt-0 flex flex-col-reverse md:flex-row">
         <section className="md:ps-28 md:pt-14 space-y-10 md:space-y-5">
           <h1 className="text-black font-medium text-2xl md:text-4xl mb-10 text-center md:text-left">
@@ -26,7 +26,8 @@ export default function HeaderSection() {
           </p>
           <div className="flex justify-center md:justify-normal">
             <button
-              aria-label="Discover"
+              id="discover"
+              aria-label="link to discover mimikri products"
               className="px-3 py-2 border border-black text-black font-medium rounded-md hover:bg-black hover:text-white self-center"
             >
               Discover now

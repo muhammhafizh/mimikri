@@ -44,7 +44,7 @@ export default function CatalogueSection() {
   ];
 
   return (
-    <main className="mt-16 md:mt-0 container mx-auto m-20" id="catalogue">
+    <main className="mt-16 md:mt-0 container mx-auto m-20" id="product">
       <h1 className="font-bold text-center text-3xl text-black mb-5">
         Our Product
       </h1>
@@ -63,7 +63,11 @@ export default function CatalogueSection() {
                   <h1 className="font-bold text-black">{data.subtitle}</h1>
                   <p className="font-light text-gray-400">explore now</p>
                 </section>
-                <button className="ms-auto">
+                <button
+                  className="ms-auto"
+                  id="explore products"
+                  aria-label="link to explore products"
+                >
                   <Image src={Arrow} width={20} height={20} alt="explore" />
                 </button>
               </div>
