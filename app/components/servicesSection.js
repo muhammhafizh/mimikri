@@ -3,7 +3,7 @@ import HeroSection from "/public/Services.svg";
 
 export default function ServicesSection() {
   return (
-    <main className="container mx-auto p-0 mb-28 md:mb-0 md:p-3" id="services">
+    <main className="container mx-auto p-0 mb-28 md:mb-0 md:p-3" id="service">
       <h1 className="text-center font-semibold text-blue-950 text-4xl">
         We Offer Best Services
       </h1>

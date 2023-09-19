@@ -55,7 +55,7 @@ export default function Navbar() {
               OUR PRODUCT
             </button>
           </a>
-          <a href="#services" role="link" aria-label="to services section">
+          <a href="#service" role="link" aria-label="to services section">
             <button
               name="services"
               id="services"

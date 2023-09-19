@@ -37,12 +37,12 @@ export default function ProjectsSection() {
   ];
   return (
     <main className="container mx-auto p-0 mb-28 md:pb-10 md:p-3" id="project">
-      <h4 className="font-semibold text-black italic text-light text-center md:text-left">
+      <h1 className="font-semibold text-black italic text-light text-center md:text-left">
         MIMIKRI CREATIVE
-      </h4>
-      <h1 className="font-bold text-black text-2xl text-center md:text-left">
-        RECENT PROJECT
       </h1>
+      <h2 className="font-bold text-black text-2xl text-center md:text-left">
+        RECENT PROJECT
+      </h2>
       <div className="grid grid-flow-row justify-items-center md:justify-items-stretch md:grid-cols-2 gap-4 pt-10">
         {dataProjects?.map((data) => {
           return (
