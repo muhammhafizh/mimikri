@@ -55,7 +55,7 @@ export default function Navbar() {
               OUR PRODUCT
             </button>
           </a>
-          <a href="#">
+          <a href="#services" role="link" aria-label="to services section">
             <button
               name="services"
               id="services"
@@ -65,7 +65,7 @@ export default function Navbar() {
               SERVICES
             </button>
           </a>
-          <a href="#">
+          <a href="#project" role="link" aria-label="to projects section">
             <button
               name="recent project"
               id="recent project"
