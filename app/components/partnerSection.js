@@ -23,20 +23,22 @@ export default function PartnerSection() {
   ];
 
   return (
-    <div className="w-full container mx-auto">
-      <h1 className="text-center font-bold text-3xl">Our Partner</h1>
-      <div className="h-[250px] m-auto overflow-hidden relative w-auto my-7">
-        <ul className="flex w-[calc(250px*14)] justify-center items-center animate-scroll pt-5">
-          {imageData?.map((image, index) => {
-            return (
-              <li className="w-60" key={index}>
-                <Image src={image} width={200} height={200} alt="Products" />
-              </li>
-            );
-          })}
-          {/* <li className="w-[250px]">Image 2</li> */}
-        </ul>
+    <main className="bg-white">
+      <div className="w-full container mx-auto">
+        <h1 className="text-center font-bold text-3xl">Our Partner</h1>
+        <div className="h-[250px] m-auto overflow-hidden relative w-auto my-7">
+          <ul className="flex w-[calc(250px*14)] justify-center items-center animate-scroll pt-5">
+            {imageData?.map((image, index) => {
+              return (
+                <li className="w-60" key={index}>
+                  <Image src={image} width={200} height={200} alt="Products" />
+                </li>
+              );
+            })}
+            {/* <li className="w-[250px]">Image 2</li> */}
+          </ul>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }

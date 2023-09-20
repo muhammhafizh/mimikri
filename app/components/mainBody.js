@@ -44,37 +44,44 @@ export default function CatalogueSection() {
   ];
 
   return (
-    <main className="mt-16 md:mt-0 container mx-auto m-20" id="product">
-      <h1 className="font-bold text-center text-3xl text-black mb-5">
-        Our Product
-      </h1>
-      <div className="carousel w-screen md:w-auto mx-auto">
-        {dataCatalogue?.map((data) => {
-          return (
-            <div key={data.id} className="carousel-item flex flex-col">
-              <Image
-                src={data.image}
-                width="auto"
-                height={300}
-                alt={data.subtitle}
-              />
-              <div className="flex w-64 -mt-7">
-                <section className="ms-7">
-                  <h1 className="font-bold text-black">{data.subtitle}</h1>
-                  <p className="font-light text-gray-400">explore now</p>
-                </section>
-                <button
-                  className="ms-auto"
-                  id="explore products"
-                  aria-label="link to explore products"
-                >
-                  <Image src={Arrow} width={20} height={20} alt="explore" />
-                </button>
+    <main className="bg-white">
+      <main className="mt-16 md:mt-0 container mx-auto m-20" id="product">
+        <h1 className="font-bold text-center text-3xl text-black mb-5">
+          Our Product
+        </h1>
+        <div className="carousel w-screen md:w-auto mx-auto">
+          {dataCatalogue?.map((data) => {
+            return (
+              <div key={data.id} className="carousel-item flex flex-col">
+                <Image
+                  src={data.image}
+                  width="auto"
+                  height={300}
+                  alt={data.subtitle}
+                />
+                <div className="flex w-64 -mt-7">
+                  <section className="ms-7">
+                    <h1 className="font-bold text-black">{data.subtitle}</h1>
+                    <p className="font-light text-gray-400">explore now</p>
+                  </section>
+                  <button
+                    className="ms-auto"
+                    id={data.subtitle + "explore products"}
+                    aria-label="link to explore products"
+                  >
+                    <Image
+                      src={Arrow}
+                      width={20}
+                      height={20}
+                      alt={data.subtitle + "explore"}
+                    />
+                  </button>
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </main>
     </main>
   );
 }

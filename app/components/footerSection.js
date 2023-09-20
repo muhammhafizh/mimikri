@@ -77,7 +77,7 @@ export default function FooterSection() {
                 <div className="flex md:block">
                   <p className="text-white font-bold me-auto">{txt.title}</p>
                   <button
-                    id="dropdown"
+                    id={txt.title + "dropdown section"}
                     aria-label="dropdown menu to see navigation in website"
                   >
                     <Image src={Down} className="md:hidden" />

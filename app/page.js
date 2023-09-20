@@ -9,7 +9,7 @@ import ServicesSection from "./components/servicesSection";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <>
       <Navbar />
       <HeaderSection />
       <CatalogueSection />
@@ -18,6 +18,6 @@ export default function Home() {
       <ProjectsSection />
       <EmailSection />
       <FooterSection />
-    </div>
+    </>
   );
 }
