@@ -37,7 +37,13 @@ export default function HeaderSection() {
             </div>
           </section>
           <div className="ms-auto">
-            <Image src={HeroSection} width={2000} alt="Mimikri-Section" />
+            <Image
+              src={HeroSection}
+              width={2000}
+              alt="Mimikri-Section"
+              className="w-auto h-auto"
+              priority={true}
+            />
           </div>
         </div>
       </main>

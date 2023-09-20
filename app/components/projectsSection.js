@@ -55,7 +55,12 @@ export default function ProjectsSection() {
                 key={data.id}
               >
                 <figure className="h-fit">
-                  <Image src={data.image} width={300} alt={data.brand} />
+                  <Image
+                    src={data.image}
+                    width={300}
+                    alt={data.brand}
+                    className="w-auto h-auto"
+                  />
                 </figure>
                 <div className="mr-10 space-y-3 mt-5 md:mt-0">
                   <p className="italic text-black">{data.title}</p>

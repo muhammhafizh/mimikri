@@ -58,6 +58,7 @@ export default function CatalogueSection() {
                   width="auto"
                   height={300}
                   alt={data.subtitle}
+                  className="w-auto h-auto"
                 />
                 <div className="flex w-64 -mt-7">
                   <section className="ms-7">
@@ -74,6 +75,7 @@ export default function CatalogueSection() {
                       width={20}
                       height={20}
                       alt={data.subtitle + "explore"}
+                      className="w-auto h-auto"
                     />
                   </button>
                 </div>

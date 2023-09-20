@@ -23,7 +23,13 @@ export default function Navbar() {
             id="hamburger"
             aria-label="hamburger menu to see navigation"
           >
-            <Image src={Hamburger} width={50} height={50} alt="Hamburger" />
+            <Image
+              src={Hamburger}
+              width={50}
+              height={50}
+              alt="Hamburger"
+              className="w-auto h-auto"
+            />
           </button>
         </div>
         <ul

@@ -23,6 +23,7 @@ export default function ServicesSection() {
               src={HeroSection}
               width={1000}
               alt="Mimikri-services-Section"
+              className="w-auto h-auto"
             />
           </div>
         </div>

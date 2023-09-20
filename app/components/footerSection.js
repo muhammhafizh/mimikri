@@ -31,14 +31,17 @@ export default function FooterSection() {
 
   const textFooter = [
     {
+      id: 0,
       title: "Company",
       text: ["About", "Contact Us", "Support", "Careers"],
     },
     {
+      id: 1,
       title: "Quick Link",
       text: ["Share Locations", "Orders Tracking", "Size Guide", "FAQs"],
     },
     {
+      id: 2,
       title: "Legal",
       text: ["Terms & conditions", "Privacy Policy"],
     },
@@ -73,24 +76,28 @@ export default function FooterSection() {
         <div className="ms-auto space-y-2 md:space-y-0 mt-7 md:mt-0 md:flex md:space-x-40">
           {textFooter?.map((txt) => {
             return (
-              <div key={txt.index} className="space-y-5">
+              <section key={txt.id} className="space-y-5">
                 <div className="flex md:block">
                   <p className="text-white font-bold me-auto">{txt.title}</p>
                   <button
                     id={txt.title + "dropdown section"}
                     aria-label="dropdown menu to see navigation in website"
                   >
-                    <Image src={Down} className="md:hidden" />
+                    <Image
+                      src={Down}
+                      className="md:hidden"
+                      alt={txt.title + "dropdown section"}
+                    />
                   </button>
                 </div>
-                {txt?.text?.map((textData) => {
+                {txt?.text?.map((textData, index) => {
                   return (
-                    <section key={txt.index} className="hidden md:block">
+                    <section key={index} className="hidden md:block">
                       <p className="text-gray-400">{textData}</p>
                     </section>
                   );
                 })}
-              </div>
+              </section>
             );
           })}
         </div>

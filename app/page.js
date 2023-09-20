@@ -1,11 +1,27 @@
-import FooterSection from "./components/footerSection";
-import CatalogueSection from "./components/mainBody";
-import HeaderSection from "./components/mainHeader";
-import Navbar from "./components/navbar";
-import PartnerSection from "./components/partnerSection";
-import ProjectsSection from "./components/projectsSection";
-import EmailSection from "./components/sectionAffiliate";
-import ServicesSection from "./components/servicesSection";
+import dynamic from "next/dynamic";
+
+const Navbar = dynamic(() => import("./components/navbar"), { ssr: false });
+const HeaderSection = dynamic(() => import("./components/mainHeader"), {
+  ssr: false,
+});
+const CatalogueSection = dynamic(() => import("./components/mainBody"), {
+  ssr: false,
+});
+const ServicesSection = dynamic(() => import("./components/servicesSection"), {
+  ssr: false,
+});
+const PartnerSection = dynamic(() => import("./components/partnerSection"), {
+  ssr: false,
+});
+const ProjectsSection = dynamic(() => import("./components/projectsSection"), {
+  ssr: false,
+});
+const EmailSection = dynamic(() => import("./components/sectionAffiliate"), {
+  ssr: false,
+});
+const FooterSection = dynamic(() => import("./components/footerSection"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
