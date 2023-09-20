@@ -1,16 +1,19 @@
 "use client";
 
 import Image from "next/image";
-// import { useState } from "react";
-// import Facebook from "/public/facebook.svg";
-// import LinkedIn from "/public/linkedin.svg";
-// import Instagram from "/public/instagram.svg";
-// import Twitter from "/public/twitter.svg";
+import { useState } from "react";
 import Down from "/public/VectorDown.svg";
 import Up from "/public/VectorUp.svg";
 
 export default function FooterSection() {
-  // const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [openID, setOpenID] = useState(null);
+
+  const openSection = (id) => {
+    setOpenID(id);
+    setOpen(!open);
+  };
+
   const TextData = [
     {
       id: 0,
@@ -82,9 +85,10 @@ export default function FooterSection() {
                   <button
                     id={txt.title + "dropdown section"}
                     aria-label="dropdown menu to see navigation in website"
+                    onClick={() => openSection(txt.id)}
                   >
                     <Image
-                      src={Down}
+                      src={open && txt.id === openID ? Up : Down}
                       className="md:hidden"
                       alt={txt.title + "dropdown section"}
                     />
@@ -92,7 +96,12 @@ export default function FooterSection() {
                 </div>
                 {txt?.text?.map((textData, index) => {
                   return (
-                    <section key={index} className="hidden md:block">
+                    <section
+                      key={index}
+                      className={
+                        open && txt.id === openID ? "block" : "hidden md:block"
+                      }
+                    >
                       <p className="text-gray-400">{textData}</p>
                     </section>
                   );
