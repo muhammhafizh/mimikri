@@ -18,7 +18,7 @@ export default function Navbar() {
             className="w-32 md:w-52"
           />
           <button
-            className="md:hidden mt-1 ml-auto"
+            className="md:hidden mt-1 ml-auto mr-3"
             onClick={() => setOpen(!open)}
             id="hamburger"
             aria-label="hamburger menu to see navigation"

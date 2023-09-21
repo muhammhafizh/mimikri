@@ -23,6 +23,10 @@ const FooterSection = dynamic(() => import("./components/footerSection"), {
   ssr: false,
 });
 
+const TestimoniSection = dynamic(() => import("./components/testimoniPage"), {
+  ssr: false,
+});
+
 export default function Home() {
   return (
     <>
@@ -32,6 +36,7 @@ export default function Home() {
       <ServicesSection />
       <PartnerSection />
       <ProjectsSection />
+      <TestimoniSection />
       <EmailSection />
       <FooterSection />
     </>
